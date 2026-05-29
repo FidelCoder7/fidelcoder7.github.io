@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fidel — CS Student & Software Developer. Python, Java, Web Development." />
+  <title>Fidel | Software Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">FC<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Fidel<span class="dot">.</span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">I build </span>
+          <span class="typed" id="typed"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          CS student crafting clean, purposeful software —
+          from CLI tools to web applications.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/FidelCoder7" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-ring">
+          <div class="badge-inner">
+            <span class="badge-top">open to</span>
+            <span class="badge-main">WORK</span>
+            <span class="badge-bottom">internships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Who I Am</h2>
+          <p>
+            I'm a Computer Science student building a portfolio of real-world
+            projects — from encrypted password vaults to web scrapers.
+            I care about writing clean, tested, well-documented code that
+            solves actual problems.
+          </p>
+          <p>
+            Currently in Phase 2 of my learning roadmap: moving into
+            backend development, REST APIs, and SQL databases with FastAPI.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">CI Passing</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-img-wrap">
+          <div class="img-placeholder">
+            <span>FC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="card-header">
+            <span class="card-number">01</span>
+            <div class="card-links">
+              <a href="https://github.com/FidelCoder7/task-manager" target="_blank" class="card-link">↗ GitHub</a>
+            </div>
+          </div>
+          <h3 class="card-title">CLI Task Manager</h3>
+          <p class="card-desc">
+            A full-featured command-line task manager with OOP design,
+            JSON persistence, and a complete pytest suite.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">OOP</span>
+            <span class="tag">argparse</span>
+            <span class="tag">pytest</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <span class="card-number">02</span>
+            <div class="card-links">
+              <a href="https://github.com/FidelCoder7/file-organizer" target="_blank" class="card-link">↗ GitHub</a>
+            </div>
+          </div>
+          <h3 class="card-title">File Organizer</h3>
+          <p class="card-desc">
+            Automation script that watches a directory and organises files
+            in real time using filesystem events.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">watchdog</span>
+            <span class="tag">pathlib</span>
+            <span class="tag">rich</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <span class="card-number">03</span>
+            <div class="card-links">
+              <a href="https://github.com/FidelCoder7/budget-tracker" target="_blank" class="card-link">↗ GitHub</a>
+            </div>
+          </div>
+          <h3 class="card-title">Budget Tracker</h3>
+          <p class="card-desc">
+            Desktop GUI app for personal finance with data visualisation,
+            CSV export, and interactive charts.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">tkinter</span>
+            <span class="tag">pandas</span>
+            <span class="tag">matplotlib</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <span class="card-number">04</span>
+            <div class="card-links">
+              <a href="https://github.com/FidelCoder7/password-generator" target="_blank" class="card-link">↗ GitHub</a>
+            </div>
+          </div>
+          <h3 class="card-title">Password Generator</h3>
+          <p class="card-desc">
+            Cryptographically secure password generator with an AES-128
+            encrypted local vault using the Fernet scheme.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">secrets</span>
+            <span class="tag">cryptography</span>
+            <span class="tag">Fernet AES</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <span class="card-number">05</span>
+            <div class="card-links">
+              <a href="https://github.com/FidelCoder7/web-scraper" target="_blank" class="card-link">↗ GitHub</a>
+            </div>
+          </div>
+          <h3 class="card-title">Web Scraper</h3>
+          <p class="card-desc">
+            Multi-page CLI scraper with retry logic, rate limiting, filtering,
+            and CSV/JSON export. All HTTP calls mocked in tests.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">requests</span>
+            <span class="tag">BeautifulSoup4</span>
+            <span class="tag">pytest</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </article>
+
+        <article class="project-card project-card--cta">
+          <div class="card-header">
+            <span class="card-number">06</span>
+          </div>
+          <h3 class="card-title">Next Project</h3>
+          <p class="card-desc">
+            Phase 2 — FastAPI REST API with SQL database.
+            Currently in progress.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag--muted">FastAPI</span>
+            <span class="tag tag--muted">SQL</span>
+            <span class="tag tag--muted">REST API</span>
+            <span class="tag tag--muted">In Progress</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────── -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">03 — Skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML & CSS</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Libraries & Tools</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">pandas / matplotlib</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">requests / BeautifulSoup</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">cryptography</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">pytest</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Dev & Workflow</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">GitHub Actions CI</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Linux / CLI</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">
+        Open to internships, remote roles, freelance projects, and
+        collaboration. Reach out anytime.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/FidelCoder7" target="_blank" class="contact-link">
+          <span class="contact-icon">⌥</span> GitHub
+        </a>
+        <a href="mailto:okemwafidel@gmail.com" class="contact-link">
+          <span class="contact-icon">✉</span> Email
+        </a>
+        <a href="https://linkedin.com/in/fidel-o-30798040b" target="_blank" class="contact-link">
+          <span class="contact-icon">↗</span> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <span>Built by Fidel — <a href="https://github.com/FidelCoder7/fidelcoder7.github.io" target="_blank">View Source</a></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
