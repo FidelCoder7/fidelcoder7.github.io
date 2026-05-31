@@ -20,6 +20,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -76,15 +77,16 @@
             projects — from encrypted password vaults to web scrapers.
             I care about writing clean, tested, well-documented code that
             solves actual problems.
+            I also take on freelance work remotely: AI annotation, transcription, and Python automation.
           </p>
           <p>
-            Currently in Phase 2 of my learning roadmap: building
+           Currently in Phase 2 of my building roadmap: building
             backend REST APIs with FastAPI, SQLAlchemy, and SQLite.
-            One project live, next in progress.
+            Two projects live, next in progress.
           </p>
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-number">6</span>
+              <span class="stat-number">7</span>
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat">
@@ -240,24 +242,45 @@
   </div>
 </article>
 
-<article class="project-card project-card--cta">
+<article class="project-card">
           <div class="card-header">
             <span class="card-number">07</span>
+            <div class="card-links">
+              <a href="https://github.com/FidelCoder7/weather-dashboard" target="_blank" class="card-link">↗ GitHub</a>
+            </div>
           </div>
-          <h3 class="card-title">Next Project</h3>
+          <h3 class="card-title">Weather Dashboard</h3>
           <p class="card-desc">
-            Phase 2 —  A web dashboard that fetches real-time weather
-    data from a public API and displays forecasts interactively.
-    Currently in progress.
+            Full-stack weather app consuming the OpenWeatherMap REST API.
+            FastAPI async backend, vanilla JS frontend with live conditions
+            and 5-day forecast.
           </p>
           <div class="card-tags">
-            <span class="tag tag--muted">FastAPI</span>
-            <span class="tag tag--muted">JAVASCRIPT</span>
-            <span class="tag tag--muted">REST API</span>
-            <span class="tag tag--muted">In Progress</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">REST API</span>
+            <span class="tag">httpx</span>
+            <span class="tag">CI/CD</span>
           </div>
         </article>
 
+        <article class="project-card project-card--cta">
+          <div class="card-header">
+            <span class="card-number">08</span>
+          </div>
+          <h3 class="card-title">Next Project</h3>
+          <p class="card-desc">
+            Phase 2 — A secure authentication system with JWT token
+            generation, protected routes, password hashing, and
+            user registration. Currently in progress.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag--muted">FastAPI</span>
+            <span class="tag tag--muted">JWT</span>
+            <span class="tag tag--muted">SQLite</span>
+            <span class="tag tag--muted">In Progress</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -339,10 +362,86 @@
     </div>
   </section>
 
+  <!-- ── SERVICES ───────────────────────────────────────────── -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-label">04 — Services</div>
+    <h2 class="section-title">Also Available For</h2>
+    <p class="services-sub">
+      Beyond software development, I take on freelance and
+      AI-related work remotely.
+    </p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <span class="service-icon">🤖</span>
+        <h3 class="service-title">AI Data Annotation</h3>
+        <p class="service-desc">
+          Labelling and annotating datasets for machine learning —
+          text classification, sentiment analysis, intent tagging,
+          and RLHF feedback tasks.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Data Labelling</span>
+          <span class="tag">RLHF</span>
+          <span class="tag">NLP Tasks</span>
+          <span class="tag">AI Evaluation</span>
+          <span class="tag">Quality Assurance</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">🎙️</span>
+        <h3 class="service-title">Transcription</h3>
+        <p class="service-desc">
+          Accurate transcription of audio and video content —
+          interviews, podcasts, lectures, and meetings.
+          Fast turnaround, high accuracy.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Audio Transcription</span>
+          <span class="tag">Video Transcription</span>
+          <span class="tag">Fast Turnaround</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">💻</span>
+        <h3 class="service-title">Freelance Development</h3>
+        <p class="service-desc">
+          Python scripting, automation, CLI tools, REST APIs,
+          and web scraping for small businesses and individuals.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Automation</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Web Scraping</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <span class="service-icon">✍️</span>
+        <h3 class="service-title">Technical Writing</h3>
+        <p class="service-desc">
+          Writing clear documentation, README files, API guides,
+          and technical blog posts for developer tools and projects.
+        </p>
+        <div class="service-tags">
+          <span class="tag">Documentation</span>
+          <span class="tag">README</span>
+          <span class="tag">API Guides</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- ── CONTACT ────────────────────────────────────────── -->
   <section class="section contact" id="contact">
     <div class="container">
-      <div class="section-label">04 — Contact</div>
+      <div class="section-label">05 — Contact</div>
       <h2 class="section-title">Let's Connect</h2>
       <p class="contact-sub">
         Open to internships, remote roles, freelance projects, and

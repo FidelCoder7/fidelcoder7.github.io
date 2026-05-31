@@ -626,3 +626,57 @@ img { max-width: 100%; display: block; }
   .skills-grid { grid-template-columns: 1fr; }
   .contact-links { flex-direction: column; align-items: center; }
 }
+/* ── SERVICES ────────────────────────────────────────────────── */
+.services { background: var(--bg); }
+
+.services-sub {
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 3rem;
+  margin-top: -1.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.service-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 1.75rem;
+}
+
+.service-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.service-desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
